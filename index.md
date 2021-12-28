@@ -2,7 +2,7 @@
 
 
 ### Privacy Policy
-===
+---
 
 ChiminhTT built the SSBUNotes app as an Open Source app. This SERVICE is provided by ChiminhTT at no cost and is intended for use as is.
 
