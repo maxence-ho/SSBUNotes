@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "MrGame&WatchHeadSSBUWebsite.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "MrGame&WatchHeadSSBUWebsite-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "MrGame&WatchHeadSSBUWebsite-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "FalcoHeadSSBUWebsite.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "FalcoHeadSSBUWebsite-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "FalcoHeadSSBUWebsite-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

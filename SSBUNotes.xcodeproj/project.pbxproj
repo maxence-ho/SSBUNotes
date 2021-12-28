@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8704884A27619196005CDC80 /* SSBUNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704884927619196005CDC80 /* SSBUNotesApp.swift */; };
+		8704884C27619196005CDC80 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704884B27619196005CDC80 /* CharacterListView.swift */; };
+		8704884E2761919C005CDC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8704884D2761919C005CDC80 /* Assets.xcassets */; };
+		870488512761919C005CDC80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870488502761919C005CDC80 /* Preview Assets.xcassets */; };
+		8704885B2761919D005CDC80 /* SSBUNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704885A2761919D005CDC80 /* SSBUNotesTests.swift */; };
+		870488652761919D005CDC80 /* SSBUNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488642761919D005CDC80 /* SSBUNotesUITests.swift */; };
+		870488672761919D005CDC80 /* SSBUNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488662761919D005CDC80 /* SSBUNotesUITestsLaunchTests.swift */; };
+		8704887527626B2C005CDC80 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704887427626B2B005CDC80 /* Character.swift */; };
+		870488772762CAF5005CDC80 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488762762CAF4005CDC80 /* Move.swift */; };
+		870488792762CB16005CDC80 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488782762CB16005CDC80 /* Stage.swift */; };
+		8704887D2762CB53005CDC80 /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704887C2762CB53005CDC80 /* CharacterData.swift */; };
+		870488822762CBDC005CDC80 /* CharacterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488812762CBDC005CDC80 /* CharacterCellView.swift */; };
+		870488852762CCD7005CDC80 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488842762CCD7005CDC80 /* Theme.swift */; };
+		870488882762DA11005CDC80 /* CharacterNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870488872762DA11005CDC80 /* CharacterNoteView.swift */; };
+		871BFD5F277B1CF9007F335E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 871BFD5E277B1CF9007F335E /* RealmSwift */; };
+		87874CBD276423E200C6E543 /* CharacterStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CBC276423E200C6E543 /* CharacterStatsView.swift */; };
+		87874CC027644E0A00C6E543 /* GeneralNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CBF27644E0A00C6E543 /* GeneralNoteView.swift */; };
+		87874CC32764539200C6E543 /* Mario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CC22764539200C6E543 /* Mario.swift */; };
+		87874CC52764543600C6E543 /* DonkeyKong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CC42764543600C6E543 /* DonkeyKong.swift */; };
+		87874CC72764543F00C6E543 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CC62764543F00C6E543 /* Link.swift */; };
+		87874CC92764545000C6E543 /* Samus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CC82764545000C6E543 /* Samus.swift */; };
+		87874CCB2764545F00C6E543 /* DarkSamus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CCA2764545F00C6E543 /* DarkSamus.swift */; };
+		87874CCD2764547E00C6E543 /* Yoshi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CCC2764547E00C6E543 /* Yoshi.swift */; };
+		87874CCF2764548900C6E543 /* Kirby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CCE2764548900C6E543 /* Kirby.swift */; };
+		87874CD12764549700C6E543 /* Fox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CD02764549700C6E543 /* Fox.swift */; };
+		87874CD3276454A800C6E543 /* Pikachu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CD2276454A800C6E543 /* Pikachu.swift */; };
+		87874CD5276454B200C6E543 /* Luigi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CD4276454B200C6E543 /* Luigi.swift */; };
+		87874CD7276454C500C6E543 /* Ness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CD6276454C500C6E543 /* Ness.swift */; };
+		87874CD9276454DD00C6E543 /* CaptainFalcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CD8276454DD00C6E543 /* CaptainFalcon.swift */; };
+		87874CDB276454EA00C6E543 /* Jigglypuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CDA276454EA00C6E543 /* Jigglypuff.swift */; };
+		87874CDD276454F800C6E543 /* Peach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CDC276454F800C6E543 /* Peach.swift */; };
+		87874CDF2764550200C6E543 /* Daisy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CDE2764550200C6E543 /* Daisy.swift */; };
+		87874CE12764551100C6E543 /* Bowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CE02764551100C6E543 /* Bowser.swift */; };
+		87874CE32764552000C6E543 /* IceClimbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CE22764552000C6E543 /* IceClimbers.swift */; };
+		87874CE527667B4B00C6E543 /* Sheik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CE427667B4B00C6E543 /* Sheik.swift */; };
+		87874CE727667B5700C6E543 /* Zelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CE627667B5700C6E543 /* Zelda.swift */; };
+		87874CE927667B6500C6E543 /* DrMario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CE827667B6500C6E543 /* DrMario.swift */; };
+		87874CEB27667B7000C6E543 /* Pichu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CEA27667B7000C6E543 /* Pichu.swift */; };
+		87874CED27667B7900C6E543 /* Falco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CEC27667B7900C6E543 /* Falco.swift */; };
+		87874CEF27667B8400C6E543 /* Marth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87874CEE27667B8400C6E543 /* Marth.swift */; };
+		878B8BC62762F43F000CA603 /* CharacterStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B8BC52762F43F000CA603 /* CharacterStageView.swift */; };
+		87AA12972768FC6C006BAC9C /* YoungLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12962768FC6C006BAC9C /* YoungLink.swift */; };
+		87AA12992768FC7B006BAC9C /* Ganondorf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12982768FC7B006BAC9C /* Ganondorf.swift */; };
+		87AA129B2768FE05006BAC9C /* Mewtwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA129A2768FE05006BAC9C /* Mewtwo.swift */; };
+		87AA129D2768FEC7006BAC9C /* Roy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA129C2768FEC7006BAC9C /* Roy.swift */; };
+		87AA129F2768FED6006BAC9C /* Chrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA129E2768FED6006BAC9C /* Chrom.swift */; };
+		87AA12A12768FEE4006BAC9C /* MrGameAndWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12A02768FEE4006BAC9C /* MrGameAndWatch.swift */; };
+		87AA12A32768FEF5006BAC9C /* MetaKnight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12A22768FEF5006BAC9C /* MetaKnight.swift */; };
+		87AA12A52768FF05006BAC9C /* Pit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12A42768FF05006BAC9C /* Pit.swift */; };
+		87AA12A72768FF1E006BAC9C /* DarkPit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12A62768FF1E006BAC9C /* DarkPit.swift */; };
+		87AA12A92768FF30006BAC9C /* ZeroSuitSamus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12A82768FF30006BAC9C /* ZeroSuitSamus.swift */; };
+		87AA12AB2768FF40006BAC9C /* Wario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA12AA2768FF40006BAC9C /* Wario.swift */; };
+		87B54FB1277A9BC700131654 /* ToonLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B54FB0277A9BC700131654 /* ToonLink.swift */; };
+		87B54FB3277A9C0400131654 /* Wolf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B54FB2277A9C0400131654 /* Wolf.swift */; };
+		87B54FB5277A9C2400131654 /* Villager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B54FB4277A9C2400131654 /* Villager.swift */; };
+		87B54FB7277A9C4200131654 /* Megaman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B54FB6277A9C4200131654 /* Megaman.swift */; };
+		87B54FB9277A9C5000131654 /* WiiFitTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B54FB8277A9C5000131654 /* WiiFitTrainer.swift */; };
+		87B54FBB277AA6D800131654 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B54FBA277AA6D800131654 /* WebView.swift */; };
+		87BE493A27667CCA003A2304 /* Lucina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE493927667CCA003A2304 /* Lucina.swift */; };
+		87BE49412767EB3B003A2304 /* CharacterNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE49402767EB3B003A2304 /* CharacterNote.swift */; };
+		87BE49442767F3E2003A2304 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE49432767F3E2003A2304 /* RealmManager.swift */; };
+		87BE49462767F8B2003A2304 /* CharacterTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE49452767F8B2003A2304 /* CharacterTabView.swift */; };
+		87BE49482767FA48003A2304 /* CharacterStages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE49472767FA47003A2304 /* CharacterStages.swift */; };
+		87EA50E127630C060095C9BB /* CharacterStageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA50E027630C050095C9BB /* CharacterStageCellView.swift */; };
+		87EBB61F276A98A800F052E1 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB61E276A98A800F052E1 /* Snake.swift */; };
+		87EBB621276A98B500F052E1 /* Ike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB620276A98B500F052E1 /* Ike.swift */; };
+		87EBB623276A98C400F052E1 /* PokemonTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB622276A98C400F052E1 /* PokemonTrainer.swift */; };
+		87EBB625276A98DF00F052E1 /* DiddyKong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB624276A98DF00F052E1 /* DiddyKong.swift */; };
+		87EBB627276A98EF00F052E1 /* Lucas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB626276A98EF00F052E1 /* Lucas.swift */; };
+		87EBB629276A992700F052E1 /* Sonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB628276A992700F052E1 /* Sonic.swift */; };
+		87EBB62B276A993A00F052E1 /* KingDedede.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB62A276A993A00F052E1 /* KingDedede.swift */; };
+		87EBB62D276A994900F052E1 /* Olimar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB62C276A994900F052E1 /* Olimar.swift */; };
+		87EBB62F276A996100F052E1 /* Lucario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB62E276A996100F052E1 /* Lucario.swift */; };
+		87EBB631276A996C00F052E1 /* Rob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBB630276A996C00F052E1 /* Rob.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		870488572761919C005CDC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8704883E27619196005CDC80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8704884527619196005CDC80;
+			remoteInfo = SSBUNotes;
+		};
+		870488612761919D005CDC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8704883E27619196005CDC80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8704884527619196005CDC80;
+			remoteInfo = SSBUNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8704884627619196005CDC80 /* SSBUNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSBUNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8704884927619196005CDC80 /* SSBUNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSBUNotesApp.swift; sourceTree = "<group>"; };
+		8704884B27619196005CDC80 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		8704884D2761919C005CDC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		870488502761919C005CDC80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		870488562761919C005CDC80 /* SSBUNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSBUNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8704885A2761919D005CDC80 /* SSBUNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSBUNotesTests.swift; sourceTree = "<group>"; };
+		870488602761919D005CDC80 /* SSBUNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSBUNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870488642761919D005CDC80 /* SSBUNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSBUNotesUITests.swift; sourceTree = "<group>"; };
+		870488662761919D005CDC80 /* SSBUNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSBUNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8704887427626B2B005CDC80 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		870488762762CAF4005CDC80 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		870488782762CB16005CDC80 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		8704887C2762CB53005CDC80 /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		870488812762CBDC005CDC80 /* CharacterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellView.swift; sourceTree = "<group>"; };
+		870488842762CCD7005CDC80 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		870488872762DA11005CDC80 /* CharacterNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNoteView.swift; sourceTree = "<group>"; };
+		871B978C277B11C6003E01A1 /* SSBUNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSBUNotes.entitlements; sourceTree = "<group>"; };
+		871B978E277B129A003E01A1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		87874CBC276423E200C6E543 /* CharacterStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatsView.swift; sourceTree = "<group>"; };
+		87874CBF27644E0A00C6E543 /* GeneralNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNoteView.swift; sourceTree = "<group>"; };
+		87874CC22764539200C6E543 /* Mario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mario.swift; sourceTree = "<group>"; };
+		87874CC42764543600C6E543 /* DonkeyKong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonkeyKong.swift; sourceTree = "<group>"; };
+		87874CC62764543F00C6E543 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		87874CC82764545000C6E543 /* Samus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Samus.swift; sourceTree = "<group>"; };
+		87874CCA2764545F00C6E543 /* DarkSamus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSamus.swift; sourceTree = "<group>"; };
+		87874CCC2764547E00C6E543 /* Yoshi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yoshi.swift; sourceTree = "<group>"; };
+		87874CCE2764548900C6E543 /* Kirby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kirby.swift; sourceTree = "<group>"; };
+		87874CD02764549700C6E543 /* Fox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fox.swift; sourceTree = "<group>"; };
+		87874CD2276454A800C6E543 /* Pikachu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pikachu.swift; sourceTree = "<group>"; };
+		87874CD4276454B200C6E543 /* Luigi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luigi.swift; sourceTree = "<group>"; };
+		87874CD6276454C500C6E543 /* Ness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness.swift; sourceTree = "<group>"; };
+		87874CD8276454DD00C6E543 /* CaptainFalcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptainFalcon.swift; sourceTree = "<group>"; };
+		87874CDA276454EA00C6E543 /* Jigglypuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jigglypuff.swift; sourceTree = "<group>"; };
+		87874CDC276454F800C6E543 /* Peach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peach.swift; sourceTree = "<group>"; };
+		87874CDE2764550200C6E543 /* Daisy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daisy.swift; sourceTree = "<group>"; };
+		87874CE02764551100C6E543 /* Bowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowser.swift; sourceTree = "<group>"; };
+		87874CE22764552000C6E543 /* IceClimbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceClimbers.swift; sourceTree = "<group>"; };
+		87874CE427667B4B00C6E543 /* Sheik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheik.swift; sourceTree = "<group>"; };
+		87874CE627667B5700C6E543 /* Zelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zelda.swift; sourceTree = "<group>"; };
+		87874CE827667B6500C6E543 /* DrMario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrMario.swift; sourceTree = "<group>"; };
+		87874CEA27667B7000C6E543 /* Pichu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pichu.swift; sourceTree = "<group>"; };
+		87874CEC27667B7900C6E543 /* Falco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falco.swift; sourceTree = "<group>"; };
+		87874CEE27667B8400C6E543 /* Marth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marth.swift; sourceTree = "<group>"; };
+		878B8BC52762F43F000CA603 /* CharacterStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStageView.swift; sourceTree = "<group>"; };
+		87AA12962768FC6C006BAC9C /* YoungLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoungLink.swift; sourceTree = "<group>"; };
+		87AA12982768FC7B006BAC9C /* Ganondorf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ganondorf.swift; sourceTree = "<group>"; };
+		87AA129A2768FE05006BAC9C /* Mewtwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mewtwo.swift; sourceTree = "<group>"; };
+		87AA129C2768FEC7006BAC9C /* Roy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roy.swift; sourceTree = "<group>"; };
+		87AA129E2768FED6006BAC9C /* Chrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chrom.swift; sourceTree = "<group>"; };
+		87AA12A02768FEE4006BAC9C /* MrGameAndWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrGameAndWatch.swift; sourceTree = "<group>"; };
+		87AA12A22768FEF5006BAC9C /* MetaKnight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaKnight.swift; sourceTree = "<group>"; };
+		87AA12A42768FF05006BAC9C /* Pit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pit.swift; sourceTree = "<group>"; };
+		87AA12A62768FF1E006BAC9C /* DarkPit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkPit.swift; sourceTree = "<group>"; };
+		87AA12A82768FF30006BAC9C /* ZeroSuitSamus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroSuitSamus.swift; sourceTree = "<group>"; };
+		87AA12AA2768FF40006BAC9C /* Wario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wario.swift; sourceTree = "<group>"; };
+		87B54FB0277A9BC700131654 /* ToonLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToonLink.swift; sourceTree = "<group>"; };
+		87B54FB2277A9C0400131654 /* Wolf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wolf.swift; sourceTree = "<group>"; };
+		87B54FB4277A9C2400131654 /* Villager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villager.swift; sourceTree = "<group>"; };
+		87B54FB6277A9C4200131654 /* Megaman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Megaman.swift; sourceTree = "<group>"; };
+		87B54FB8277A9C5000131654 /* WiiFitTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiiFitTrainer.swift; sourceTree = "<group>"; };
+		87B54FBA277AA6D800131654 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		87BE493927667CCA003A2304 /* Lucina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lucina.swift; sourceTree = "<group>"; };
+		87BE49402767EB3B003A2304 /* CharacterNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNote.swift; sourceTree = "<group>"; };
+		87BE49432767F3E2003A2304 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		87BE49452767F8B2003A2304 /* CharacterTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTabView.swift; sourceTree = "<group>"; };
+		87BE49472767FA47003A2304 /* CharacterStages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStages.swift; sourceTree = "<group>"; };
+		87EA50E027630C050095C9BB /* CharacterStageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStageCellView.swift; sourceTree = "<group>"; };
+		87EBB61E276A98A800F052E1 /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		87EBB620276A98B500F052E1 /* Ike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ike.swift; sourceTree = "<group>"; };
+		87EBB622276A98C400F052E1 /* PokemonTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTrainer.swift; sourceTree = "<group>"; };
+		87EBB624276A98DF00F052E1 /* DiddyKong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiddyKong.swift; sourceTree = "<group>"; };
+		87EBB626276A98EF00F052E1 /* Lucas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lucas.swift; sourceTree = "<group>"; };
+		87EBB628276A992700F052E1 /* Sonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonic.swift; sourceTree = "<group>"; };
+		87EBB62A276A993A00F052E1 /* KingDedede.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingDedede.swift; sourceTree = "<group>"; };
+		87EBB62C276A994900F052E1 /* Olimar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olimar.swift; sourceTree = "<group>"; };
+		87EBB62E276A996100F052E1 /* Lucario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lucario.swift; sourceTree = "<group>"; };
+		87EBB630276A996C00F052E1 /* Rob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rob.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8704884327619196005CDC80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871BFD5F277B1CF9007F335E /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870488532761919C005CDC80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8704885D2761919D005CDC80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8704883D27619196005CDC80 = {
+			isa = PBXGroup;
+			children = (
+				8704884827619196005CDC80 /* SSBUNotes */,
+				870488592761919D005CDC80 /* SSBUNotesTests */,
+				870488632761919D005CDC80 /* SSBUNotesUITests */,
+				8704884727619196005CDC80 /* Products */,
+				871B978D277B129A003E01A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8704884727619196005CDC80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8704884627619196005CDC80 /* SSBUNotes.app */,
+				870488562761919C005CDC80 /* SSBUNotesTests.xctest */,
+				870488602761919D005CDC80 /* SSBUNotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8704884827619196005CDC80 /* SSBUNotes */ = {
+			isa = PBXGroup;
+			children = (
+				871B978C277B11C6003E01A1 /* SSBUNotes.entitlements */,
+				87BE49422767F3CE003A2304 /* Realm */,
+				87874CC12764538100C6E543 /* Data */,
+				870488832762CCC5005CDC80 /* DesignSystem */,
+				8704887E2762CB83005CDC80 /* Views */,
+				87048873276191C4005CDC80 /* Models */,
+				8704884927619196005CDC80 /* SSBUNotesApp.swift */,
+				8704884D2761919C005CDC80 /* Assets.xcassets */,
+				8704884F2761919C005CDC80 /* Preview Content */,
+			);
+			path = SSBUNotes;
+			sourceTree = "<group>";
+		};
+		8704884F2761919C005CDC80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				870488502761919C005CDC80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		870488592761919D005CDC80 /* SSBUNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				8704885A2761919D005CDC80 /* SSBUNotesTests.swift */,
+			);
+			path = SSBUNotesTests;
+			sourceTree = "<group>";
+		};
+		870488632761919D005CDC80 /* SSBUNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				870488642761919D005CDC80 /* SSBUNotesUITests.swift */,
+				870488662761919D005CDC80 /* SSBUNotesUITestsLaunchTests.swift */,
+			);
+			path = SSBUNotesUITests;
+			sourceTree = "<group>";
+		};
+		87048873276191C4005CDC80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8704887427626B2B005CDC80 /* Character.swift */,
+				8704887C2762CB53005CDC80 /* CharacterData.swift */,
+				87BE49402767EB3B003A2304 /* CharacterNote.swift */,
+				87BE49472767FA47003A2304 /* CharacterStages.swift */,
+				870488762762CAF4005CDC80 /* Move.swift */,
+				870488782762CB16005CDC80 /* Stage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8704887E2762CB83005CDC80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87874CBE27644DF000C6E543 /* GeneralNoteView */,
+				87874CBB276423BC00C6E543 /* CharacterStatsView */,
+				870488862762D9FB005CDC80 /* CharacterNoteView */,
+				8704887F2762CB8A005CDC80 /* CharacterListView */,
+				87B54FBA277AA6D800131654 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8704887F2762CB8A005CDC80 /* CharacterListView */ = {
+			isa = PBXGroup;
+			children = (
+				8704884B27619196005CDC80 /* CharacterListView.swift */,
+				870488802762CB98005CDC80 /* CharacterCell */,
+			);
+			path = CharacterListView;
+			sourceTree = "<group>";
+		};
+		870488802762CB98005CDC80 /* CharacterCell */ = {
+			isa = PBXGroup;
+			children = (
+				870488812762CBDC005CDC80 /* CharacterCellView.swift */,
+			);
+			path = CharacterCell;
+			sourceTree = "<group>";
+		};
+		870488832762CCC5005CDC80 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				870488842762CCD7005CDC80 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		870488862762D9FB005CDC80 /* CharacterNoteView */ = {
+			isa = PBXGroup;
+			children = (
+				870488872762DA11005CDC80 /* CharacterNoteView.swift */,
+				87EA50E027630C050095C9BB /* CharacterStageCellView.swift */,
+				878B8BC52762F43F000CA603 /* CharacterStageView.swift */,
+				87BE49452767F8B2003A2304 /* CharacterTabView.swift */,
+			);
+			path = CharacterNoteView;
+			sourceTree = "<group>";
+		};
+		871B978D277B129A003E01A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				871B978E277B129A003E01A1 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87874CBB276423BC00C6E543 /* CharacterStatsView */ = {
+			isa = PBXGroup;
+			children = (
+				87874CBC276423E200C6E543 /* CharacterStatsView.swift */,
+			);
+			path = CharacterStatsView;
+			sourceTree = "<group>";
+		};
+		87874CBE27644DF000C6E543 /* GeneralNoteView */ = {
+			isa = PBXGroup;
+			children = (
+				87874CBF27644E0A00C6E543 /* GeneralNoteView.swift */,
+			);
+			path = GeneralNoteView;
+			sourceTree = "<group>";
+		};
+		87874CC12764538100C6E543 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				87874CC22764539200C6E543 /* Mario.swift */,
+				87874CC42764543600C6E543 /* DonkeyKong.swift */,
+				87874CC62764543F00C6E543 /* Link.swift */,
+				87874CC82764545000C6E543 /* Samus.swift */,
+				87874CCA2764545F00C6E543 /* DarkSamus.swift */,
+				87874CCC2764547E00C6E543 /* Yoshi.swift */,
+				87874CCE2764548900C6E543 /* Kirby.swift */,
+				87874CD02764549700C6E543 /* Fox.swift */,
+				87874CD2276454A800C6E543 /* Pikachu.swift */,
+				87874CD4276454B200C6E543 /* Luigi.swift */,
+				87874CD6276454C500C6E543 /* Ness.swift */,
+				87874CD8276454DD00C6E543 /* CaptainFalcon.swift */,
+				87874CDA276454EA00C6E543 /* Jigglypuff.swift */,
+				87874CDC276454F800C6E543 /* Peach.swift */,
+				87874CDE2764550200C6E543 /* Daisy.swift */,
+				87874CE02764551100C6E543 /* Bowser.swift */,
+				87874CE22764552000C6E543 /* IceClimbers.swift */,
+				87874CE427667B4B00C6E543 /* Sheik.swift */,
+				87874CE627667B5700C6E543 /* Zelda.swift */,
+				87874CE827667B6500C6E543 /* DrMario.swift */,
+				87874CEA27667B7000C6E543 /* Pichu.swift */,
+				87874CEC27667B7900C6E543 /* Falco.swift */,
+				87874CEE27667B8400C6E543 /* Marth.swift */,
+				87BE493927667CCA003A2304 /* Lucina.swift */,
+				87AA12962768FC6C006BAC9C /* YoungLink.swift */,
+				87AA12982768FC7B006BAC9C /* Ganondorf.swift */,
+				87AA129A2768FE05006BAC9C /* Mewtwo.swift */,
+				87AA129C2768FEC7006BAC9C /* Roy.swift */,
+				87AA129E2768FED6006BAC9C /* Chrom.swift */,
+				87AA12A02768FEE4006BAC9C /* MrGameAndWatch.swift */,
+				87AA12A22768FEF5006BAC9C /* MetaKnight.swift */,
+				87AA12A42768FF05006BAC9C /* Pit.swift */,
+				87AA12A62768FF1E006BAC9C /* DarkPit.swift */,
+				87AA12A82768FF30006BAC9C /* ZeroSuitSamus.swift */,
+				87AA12AA2768FF40006BAC9C /* Wario.swift */,
+				87EBB61E276A98A800F052E1 /* Snake.swift */,
+				87EBB620276A98B500F052E1 /* Ike.swift */,
+				87EBB622276A98C400F052E1 /* PokemonTrainer.swift */,
+				87EBB624276A98DF00F052E1 /* DiddyKong.swift */,
+				87EBB626276A98EF00F052E1 /* Lucas.swift */,
+				87EBB628276A992700F052E1 /* Sonic.swift */,
+				87EBB62A276A993A00F052E1 /* KingDedede.swift */,
+				87EBB62C276A994900F052E1 /* Olimar.swift */,
+				87EBB62E276A996100F052E1 /* Lucario.swift */,
+				87EBB630276A996C00F052E1 /* Rob.swift */,
+				87B54FB0277A9BC700131654 /* ToonLink.swift */,
+				87B54FB2277A9C0400131654 /* Wolf.swift */,
+				87B54FB4277A9C2400131654 /* Villager.swift */,
+				87B54FB6277A9C4200131654 /* Megaman.swift */,
+				87B54FB8277A9C5000131654 /* WiiFitTrainer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		87BE49422767F3CE003A2304 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				87BE49432767F3E2003A2304 /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8704884527619196005CDC80 /* SSBUNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8704886A2761919D005CDC80 /* Build configuration list for PBXNativeTarget "SSBUNotes" */;
+			buildPhases = (
+				8704884227619196005CDC80 /* Sources */,
+				8704884327619196005CDC80 /* Frameworks */,
+				8704884427619196005CDC80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSBUNotes;
+			packageProductDependencies = (
+				871BFD5E277B1CF9007F335E /* RealmSwift */,
+			);
+			productName = SSBUNotes;
+			productReference = 8704884627619196005CDC80 /* SSBUNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		870488552761919C005CDC80 /* SSBUNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8704886D2761919D005CDC80 /* Build configuration list for PBXNativeTarget "SSBUNotesTests" */;
+			buildPhases = (
+				870488522761919C005CDC80 /* Sources */,
+				870488532761919C005CDC80 /* Frameworks */,
+				870488542761919C005CDC80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870488582761919C005CDC80 /* PBXTargetDependency */,
+			);
+			name = SSBUNotesTests;
+			productName = SSBUNotesTests;
+			productReference = 870488562761919C005CDC80 /* SSBUNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8704885F2761919D005CDC80 /* SSBUNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870488702761919D005CDC80 /* Build configuration list for PBXNativeTarget "SSBUNotesUITests" */;
+			buildPhases = (
+				8704885C2761919D005CDC80 /* Sources */,
+				8704885D2761919D005CDC80 /* Frameworks */,
+				8704885E2761919D005CDC80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870488622761919D005CDC80 /* PBXTargetDependency */,
+			);
+			name = SSBUNotesUITests;
+			productName = SSBUNotesUITests;
+			productReference = 870488602761919D005CDC80 /* SSBUNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8704883E27619196005CDC80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					8704884527619196005CDC80 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					870488552761919C005CDC80 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 8704884527619196005CDC80;
+					};
+					8704885F2761919D005CDC80 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 8704884527619196005CDC80;
+					};
+				};
+			};
+			buildConfigurationList = 8704884127619196005CDC80 /* Build configuration list for PBXProject "SSBUNotes" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8704883D27619196005CDC80;
+			packageReferences = (
+				871BFD5D277B1CF9007F335E /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 8704884727619196005CDC80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8704884527619196005CDC80 /* SSBUNotes */,
+				870488552761919C005CDC80 /* SSBUNotesTests */,
+				8704885F2761919D005CDC80 /* SSBUNotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8704884427619196005CDC80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870488512761919C005CDC80 /* Preview Assets.xcassets in Resources */,
+				8704884E2761919C005CDC80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870488542761919C005CDC80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8704885E2761919D005CDC80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8704884227619196005CDC80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AA12992768FC7B006BAC9C /* Ganondorf.swift in Sources */,
+				87874CC027644E0A00C6E543 /* GeneralNoteView.swift in Sources */,
+				87AA129B2768FE05006BAC9C /* Mewtwo.swift in Sources */,
+				870488852762CCD7005CDC80 /* Theme.swift in Sources */,
+				87874CDB276454EA00C6E543 /* Jigglypuff.swift in Sources */,
+				87EBB61F276A98A800F052E1 /* Snake.swift in Sources */,
+				87874CD9276454DD00C6E543 /* CaptainFalcon.swift in Sources */,
+				87B54FB9277A9C5000131654 /* WiiFitTrainer.swift in Sources */,
+				87874CDF2764550200C6E543 /* Daisy.swift in Sources */,
+				87AA12A72768FF1E006BAC9C /* DarkPit.swift in Sources */,
+				87EBB627276A98EF00F052E1 /* Lucas.swift in Sources */,
+				87874CED27667B7900C6E543 /* Falco.swift in Sources */,
+				8704887D2762CB53005CDC80 /* CharacterData.swift in Sources */,
+				87874CE527667B4B00C6E543 /* Sheik.swift in Sources */,
+				87874CC72764543F00C6E543 /* Link.swift in Sources */,
+				878B8BC62762F43F000CA603 /* CharacterStageView.swift in Sources */,
+				87874CE927667B6500C6E543 /* DrMario.swift in Sources */,
+				870488772762CAF5005CDC80 /* Move.swift in Sources */,
+				87874CD7276454C500C6E543 /* Ness.swift in Sources */,
+				8704887527626B2C005CDC80 /* Character.swift in Sources */,
+				87874CD5276454B200C6E543 /* Luigi.swift in Sources */,
+				87874CCD2764547E00C6E543 /* Yoshi.swift in Sources */,
+				87874CC92764545000C6E543 /* Samus.swift in Sources */,
+				870488822762CBDC005CDC80 /* CharacterCellView.swift in Sources */,
+				87AA12972768FC6C006BAC9C /* YoungLink.swift in Sources */,
+				87EBB625276A98DF00F052E1 /* DiddyKong.swift in Sources */,
+				87874CEF27667B8400C6E543 /* Marth.swift in Sources */,
+				87874CD12764549700C6E543 /* Fox.swift in Sources */,
+				87EBB62B276A993A00F052E1 /* KingDedede.swift in Sources */,
+				87874CBD276423E200C6E543 /* CharacterStatsView.swift in Sources */,
+				87EBB631276A996C00F052E1 /* Rob.swift in Sources */,
+				8704884C27619196005CDC80 /* CharacterListView.swift in Sources */,
+				87874CCB2764545F00C6E543 /* DarkSamus.swift in Sources */,
+				87874CDD276454F800C6E543 /* Peach.swift in Sources */,
+				87BE49462767F8B2003A2304 /* CharacterTabView.swift in Sources */,
+				87EBB629276A992700F052E1 /* Sonic.swift in Sources */,
+				87AA129D2768FEC7006BAC9C /* Roy.swift in Sources */,
+				87874CE32764552000C6E543 /* IceClimbers.swift in Sources */,
+				87B54FB5277A9C2400131654 /* Villager.swift in Sources */,
+				87EBB62F276A996100F052E1 /* Lucario.swift in Sources */,
+				87874CE727667B5700C6E543 /* Zelda.swift in Sources */,
+				87EBB623276A98C400F052E1 /* PokemonTrainer.swift in Sources */,
+				87EBB621276A98B500F052E1 /* Ike.swift in Sources */,
+				87BE49442767F3E2003A2304 /* RealmManager.swift in Sources */,
+				870488882762DA11005CDC80 /* CharacterNoteView.swift in Sources */,
+				87B54FBB277AA6D800131654 /* WebView.swift in Sources */,
+				87874CE12764551100C6E543 /* Bowser.swift in Sources */,
+				87BE493A27667CCA003A2304 /* Lucina.swift in Sources */,
+				87B54FB7277A9C4200131654 /* Megaman.swift in Sources */,
+				87AA12AB2768FF40006BAC9C /* Wario.swift in Sources */,
+				87874CD3276454A800C6E543 /* Pikachu.swift in Sources */,
+				87874CEB27667B7000C6E543 /* Pichu.swift in Sources */,
+				87AA129F2768FED6006BAC9C /* Chrom.swift in Sources */,
+				87EBB62D276A994900F052E1 /* Olimar.swift in Sources */,
+				87BE49482767FA48003A2304 /* CharacterStages.swift in Sources */,
+				87AA12A92768FF30006BAC9C /* ZeroSuitSamus.swift in Sources */,
+				87AA12A32768FEF5006BAC9C /* MetaKnight.swift in Sources */,
+				87BE49412767EB3B003A2304 /* CharacterNote.swift in Sources */,
+				87874CC52764543600C6E543 /* DonkeyKong.swift in Sources */,
+				8704884A27619196005CDC80 /* SSBUNotesApp.swift in Sources */,
+				87AA12A12768FEE4006BAC9C /* MrGameAndWatch.swift in Sources */,
+				87AA12A52768FF05006BAC9C /* Pit.swift in Sources */,
+				87EA50E127630C060095C9BB /* CharacterStageCellView.swift in Sources */,
+				87874CCF2764548900C6E543 /* Kirby.swift in Sources */,
+				87B54FB1277A9BC700131654 /* ToonLink.swift in Sources */,
+				87B54FB3277A9C0400131654 /* Wolf.swift in Sources */,
+				87874CC32764539200C6E543 /* Mario.swift in Sources */,
+				870488792762CB16005CDC80 /* Stage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870488522761919C005CDC80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8704885B2761919D005CDC80 /* SSBUNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8704885C2761919D005CDC80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870488652761919D005CDC80 /* SSBUNotesUITests.swift in Sources */,
+				870488672761919D005CDC80 /* SSBUNotesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		870488582761919C005CDC80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8704884527619196005CDC80 /* SSBUNotes */;
+			targetProxy = 870488572761919C005CDC80 /* PBXContainerItemProxy */;
+		};
+		870488622761919D005CDC80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8704884527619196005CDC80 /* SSBUNotes */;
+			targetProxy = 870488612761919D005CDC80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		870488682761919D005CDC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		870488692761919D005CDC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8704886B2761919D005CDC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SSBUNotes/SSBUNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SSBUNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = 37L53VP24Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxence-ho.SSBUNotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8704886C2761919D005CDC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SSBUNotes/SSBUNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SSBUNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = 37L53VP24Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxence-ho.SSBUNotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8704886E2761919D005CDC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37L53VP24Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxence-ho.SSBUNotesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSBUNotes.app/SSBUNotes";
+			};
+			name = Debug;
+		};
+		8704886F2761919D005CDC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37L53VP24Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxence-ho.SSBUNotesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSBUNotes.app/SSBUNotes";
+			};
+			name = Release;
+		};
+		870488712761919D005CDC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37L53VP24Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxence-ho.SSBUNotesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSBUNotes;
+			};
+			name = Debug;
+		};
+		870488722761919D005CDC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37L53VP24Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maxence-ho.SSBUNotesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SSBUNotes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8704884127619196005CDC80 /* Build configuration list for PBXProject "SSBUNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870488682761919D005CDC80 /* Debug */,
+				870488692761919D005CDC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8704886A2761919D005CDC80 /* Build configuration list for PBXNativeTarget "SSBUNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8704886B2761919D005CDC80 /* Debug */,
+				8704886C2761919D005CDC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8704886D2761919D005CDC80 /* Build configuration list for PBXNativeTarget "SSBUNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8704886E2761919D005CDC80 /* Debug */,
+				8704886F2761919D005CDC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870488702761919D005CDC80 /* Build configuration list for PBXNativeTarget "SSBUNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870488712761919D005CDC80 /* Debug */,
+				870488722761919D005CDC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		871BFD5D277B1CF9007F335E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		871BFD5E277B1CF9007F335E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 871BFD5D277B1CF9007F335E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8704883E27619196005CDC80 /* Project object */;
+}

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "ZeldaHeadSSBUWebsite.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "ZeldaHeadSSBUWebsite-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "ZeldaHeadSSBUWebsite-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
