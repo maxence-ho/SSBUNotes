@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "daisy_background_color") ?? .black,
     icon: UIImage(named: "daisy_icon") ?? UIImage(),
     image: UIImage(named: "daisy_image") ?? UIImage(),
-    stats: CharacterStatsData.daisy_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let daisy_stats = CharacterStats(weight: 89)
 }

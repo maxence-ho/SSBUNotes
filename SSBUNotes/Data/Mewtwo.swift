@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "mewtwo_background_color") ?? .black,
     icon: UIImage(named: "mewtwo_icon") ?? UIImage(),
     image: UIImage(named: "mewtwo_image") ?? UIImage(),
-    stats: CharacterStatsData.mewtwo_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let mewtwo_stats = CharacterStats(weight: 79)
 }

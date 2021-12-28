@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "ganondorf_background_color") ?? .black,
     icon: UIImage(named: "ganondorf_icon") ?? UIImage(),
     image: UIImage(named: "ganondorf_image") ?? UIImage(),
-    stats: CharacterStatsData.ganondorf_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let ganondorf_stats = CharacterStats(weight: 118)
 }

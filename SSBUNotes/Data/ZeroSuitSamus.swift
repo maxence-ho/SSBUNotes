@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "zss_background_color") ?? .black,
     icon: UIImage(named: "zss_icon") ?? UIImage(),
     image: UIImage(named: "zss_image") ?? UIImage(),
-    stats: CharacterStatsData.zss_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let zss_stats = CharacterStats(weight: 80)
 }

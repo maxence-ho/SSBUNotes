@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "ice_climbers_background_color") ?? .black,
     icon: UIImage(named: "ice_climbers_icon") ?? UIImage(),
     image: UIImage(named: "ice_climbers_image") ?? UIImage(),
-    stats: CharacterStatsData.ice_climbers_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let ice_climbers_stats = CharacterStats(weight: 92)
 }

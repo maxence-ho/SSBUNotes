@@ -16,13 +16,7 @@ extension CharacterData
     background_color: UIColor(named: "villager_color") ?? .black,
     icon: UIImage(named: "villager_icon") ?? UIImage(),
     image: UIImage(named: "villager_image") ?? UIImage(),
-    stats: CharacterStatsData.villager_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let villager_stats = CharacterStats(weight: 107)
 }
 

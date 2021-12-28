@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "olimar_background_color") ?? .black,
     icon: UIImage(named: "olimar_icon") ?? UIImage(),
     image: UIImage(named: "olimar_image") ?? UIImage(),
-    stats: CharacterStatsData.olimar_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let olimar_stats = CharacterStats(weight: 107)
 }

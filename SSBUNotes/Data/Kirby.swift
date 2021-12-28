@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "kirby_background_color") ?? .black,
     icon: UIImage(named: "kirby_icon") ?? UIImage(),
     image: UIImage(named: "kirby_image") ?? UIImage(),
-    stats: CharacterStatsData.kirby_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let kirby_stats = CharacterStats(weight: 79)
 }

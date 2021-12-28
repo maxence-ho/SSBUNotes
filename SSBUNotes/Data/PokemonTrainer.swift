@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "pokemon_trainer_background_color") ?? .black,
     icon: UIImage(named: "pokemon_trainer_icon") ?? UIImage(),
     image: UIImage(named: "pokemon_trainer_image") ?? UIImage(),
-    stats: CharacterStatsData.pokemon_trainer_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let pokemon_trainer_stats = CharacterStats(weight: 0)
 }

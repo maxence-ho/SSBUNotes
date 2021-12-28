@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "snake_background_color") ?? .black,
     icon: UIImage(named: "snake_icon") ?? UIImage(),
     image: UIImage(named: "snake_image") ?? UIImage(),
-    stats: CharacterStatsData.snake_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let snake_stats = CharacterStats(weight: 106)
 }

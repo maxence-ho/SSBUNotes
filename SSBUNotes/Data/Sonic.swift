@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "sonic_background_color") ?? .black,
     icon: UIImage(named: "sonic_icon") ?? UIImage(),
     image: UIImage(named: "sonic_image") ?? UIImage(),
-    stats: CharacterStatsData.sonic_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let sonic_stats = CharacterStats(weight: 107)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "megaman_color") ?? .black,
     icon: UIImage(named: "megaman_icon") ?? UIImage(),
     image: UIImage(named: "megaman_image") ?? UIImage(),
-    stats: CharacterStatsData.megaman_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let megaman_stats = CharacterStats(weight: 107)
 }

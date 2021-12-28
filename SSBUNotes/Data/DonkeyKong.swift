@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "donkey_kong_background_color") ?? .black,
     icon: UIImage(named: "donkey_kong_icon") ?? UIImage(),
     image: UIImage(named: "donkey_kong_image") ?? UIImage(),
-    stats: CharacterStatsData.donkey_kong_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let donkey_kong_stats = CharacterStats(weight: 127)
 }

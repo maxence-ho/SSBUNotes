@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "jigglypuff_background_color") ?? .black,
     icon: UIImage(named: "jigglypuff_icon") ?? UIImage(),
     image: UIImage(named: "jigglypuff_image") ?? UIImage(),
-    stats: CharacterStatsData.jigglypuff_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let jigglypuff_stats = CharacterStats(weight: 68)
 }

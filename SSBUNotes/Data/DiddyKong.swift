@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "diddy_kong_background_color") ?? .black,
     icon: UIImage(named: "diddy_kong_icon") ?? UIImage(),
     image: UIImage(named: "diddy_kong_image") ?? UIImage(),
-    stats: CharacterStatsData.diddy_kong_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let diddy_kong_stats = CharacterStats(weight: 90)
 }

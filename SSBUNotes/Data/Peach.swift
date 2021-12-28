@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "peach_background_color") ?? .black,
     icon: UIImage(named: "peach_icon") ?? UIImage(),
     image: UIImage(named: "peach_image") ?? UIImage(),
-    stats: CharacterStatsData.peach_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let peach_stats = CharacterStats(weight: 89)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "pichu_background_color") ?? .black,
     icon: UIImage(named: "pichu_icon") ?? UIImage(),
     image: UIImage(named: "pichu_image") ?? UIImage(),
-    stats: CharacterStatsData.pichu_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let pichu_stats = CharacterStats(weight: 62)
 }

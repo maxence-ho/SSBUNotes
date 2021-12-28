@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "rob_background_color") ?? .black,
     icon: UIImage(named: "rob_icon") ?? UIImage(),
     image: UIImage(named: "rob_image") ?? UIImage(),
-    stats: CharacterStatsData.rob_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let rob_stats = CharacterStats(weight: 107)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "sheik_background_color") ?? .black,
     icon: UIImage(named: "sheik_icon") ?? UIImage(),
     image: UIImage(named: "sheik_image") ?? UIImage(),
-    stats: CharacterStatsData.sheik_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let sheik_stats = CharacterStats(weight: 78)
 }

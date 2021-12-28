@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "dark_samus_background_color") ?? .black,
     icon: UIImage(named: "dark_samus_icon") ?? UIImage(),
     image: UIImage(named: "dark_samus_image") ?? UIImage(),
-    stats: CharacterStatsData.dark_samus_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let dark_samus_stats = CharacterStats(weight: 108)
 }

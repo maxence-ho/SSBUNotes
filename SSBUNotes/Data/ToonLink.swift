@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "toon_link_color") ?? .black,
     icon: UIImage(named: "toon_link_icon") ?? UIImage(),
     image: UIImage(named: "toon_link_image") ?? UIImage(),
-    stats: CharacterStatsData.toon_link_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let toon_link_stats = CharacterStats(weight: 107)
 }

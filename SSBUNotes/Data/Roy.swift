@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "roy_background_color") ?? .black,
     icon: UIImage(named: "roy_icon") ?? UIImage(),
     image: UIImage(named: "roy_image") ?? UIImage(),
-    stats: CharacterStatsData.roy_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let roy_stats = CharacterStats(weight: 95)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "young_link_background_color") ?? .black,
     icon: UIImage(named: "young_link_icon") ?? UIImage(),
     image: UIImage(named: "young_link_image") ?? UIImage(),
-    stats: CharacterStatsData.young_link_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let young_link_stats = CharacterStats(weight: 88)
 }

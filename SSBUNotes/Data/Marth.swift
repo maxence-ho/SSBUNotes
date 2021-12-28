@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "marth_background_color") ?? .black,
     icon: UIImage(named: "marth_icon") ?? UIImage(),
     image: UIImage(named: "marth_image") ?? UIImage(),
-    stats: CharacterStatsData.marth_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let marth_stats = CharacterStats(weight: 90)
 }

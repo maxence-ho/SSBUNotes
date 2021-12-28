@@ -16,13 +16,7 @@ extension CharacterData
     background_color: UIColor(named: "wolf_color") ?? .black,
     icon: UIImage(named: "wolf_icon") ?? UIImage(),
     image: UIImage(named: "wolf_image") ?? UIImage(),
-    stats: CharacterStatsData.wolf_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let wolf_stats = CharacterStats(weight: 107)
 }
 

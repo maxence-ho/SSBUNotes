@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "falco_background_color") ?? .black,
     icon: UIImage(named: "falco_icon") ?? UIImage(),
     image: UIImage(named: "falco_image") ?? UIImage(),
-    stats: CharacterStatsData.falco_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let falco_stats = CharacterStats(weight: 135)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "chrom_background_color") ?? .black,
     icon: UIImage(named: "chrom_icon") ?? UIImage(),
     image: UIImage(named: "chrom_image") ?? UIImage(),
-    stats: CharacterStatsData.chrom_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let chrom_stats = CharacterStats(weight: 95)
 }

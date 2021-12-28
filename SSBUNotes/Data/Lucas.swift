@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "lucas_background_color") ?? .black,
     icon: UIImage(named: "lucas_icon") ?? UIImage(),
     image: UIImage(named: "lucas_image") ?? UIImage(),
-    stats: CharacterStatsData.lucas_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let lucas_stats = CharacterStats(weight: 107)
 }

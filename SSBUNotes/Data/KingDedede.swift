@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "ddd_background_color") ?? .black,
     icon: UIImage(named: "ddd_icon") ?? UIImage(),
     image: UIImage(named: "ddd_image") ?? UIImage(),
-    stats: CharacterStatsData.ddd_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let ddd_stats = CharacterStats(weight: 107)
 }

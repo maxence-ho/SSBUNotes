@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "dark_pit_background_color") ?? .black,
     icon: UIImage(named: "dark_pit_icon") ?? UIImage(),
     image: UIImage(named: "dark_pit_image") ?? UIImage(),
-    stats: CharacterStatsData.dark_pit_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let dark_pit_stats = CharacterStats(weight: 96)
 }

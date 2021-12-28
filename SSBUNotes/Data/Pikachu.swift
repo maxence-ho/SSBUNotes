@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "pikachu_background_color") ?? .black,
     icon: UIImage(named: "pikachu_icon") ?? UIImage(),
     image: UIImage(named: "pikachu_image") ?? UIImage(),
-    stats: CharacterStatsData.pikachu_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let pikachu_stats = CharacterStats(weight: 79)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "wiifittrainer_color") ?? .black,
     icon: UIImage(named: "wiifittrainer_icon") ?? UIImage(),
     image: UIImage(named: "wiifittrainer_image") ?? UIImage(),
-    stats: CharacterStatsData.wiifittrainer_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let wiifittrainer_stats = CharacterStats(weight: 107)
 }

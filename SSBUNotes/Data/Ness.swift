@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "ness_background_color") ?? .black,
     icon: UIImage(named: "ness_icon") ?? UIImage(),
     image: UIImage(named: "ness_image") ?? UIImage(),
-    stats: CharacterStatsData.ness_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let ness_stats = CharacterStats(weight: 94)
 }

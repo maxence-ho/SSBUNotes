@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "bowser_background_color") ?? .black,
     icon: UIImage(named: "bowser_icon") ?? UIImage(),
     image: UIImage(named: "bowser_image") ?? UIImage(),
-    stats: CharacterStatsData.bowser_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let bowser_stats = CharacterStats(weight: 135)
 }

@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "ike_background_color") ?? .black,
     icon: UIImage(named: "ike_icon") ?? UIImage(),
     image: UIImage(named: "ike_image") ?? UIImage(),
-    stats: CharacterStatsData.ike_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let ike_stats = CharacterStats(weight: 107)
 }

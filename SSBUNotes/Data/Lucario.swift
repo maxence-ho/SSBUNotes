@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "lucario_background_color") ?? .black,
     icon: UIImage(named: "lucario_icon") ?? UIImage(),
     image: UIImage(named: "lucario_image") ?? UIImage(),
-    stats: CharacterStatsData.lucario_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let lucario_stats = CharacterStats(weight: 107)
 }

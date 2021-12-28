@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "mr_game_and_watch_background_color") ?? .black,
     icon: UIImage(named: "mr_game_and_watch_icon") ?? UIImage(),
     image: UIImage(named: "mr_game_and_watch_image") ?? UIImage(),
-    stats: CharacterStatsData.mr_game_and_watch_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let mr_game_and_watch_stats = CharacterStats(weight: 75)
 }

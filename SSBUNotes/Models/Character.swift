@@ -15,13 +15,7 @@ struct Character: Identifiable
   let background_color: UIColor
   let icon: UIImage
   let image: UIImage
-  let stats: CharacterStats
   var note: String
-}
-
-struct CharacterStats
-{
-  let weight: Int
 }
 
 struct CharacterStatsData {}

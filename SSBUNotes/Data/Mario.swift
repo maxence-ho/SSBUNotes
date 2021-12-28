@@ -16,12 +16,6 @@ extension CharacterData
     background_color: UIColor(named: "mario_background_color") ?? .black,
     icon: UIImage(named: "mario_icon") ?? UIImage(),
     image: UIImage(named: "mario_image") ?? UIImage(),
-    stats: CharacterStatsData.mario_stats,
     note: ""
   )
-}
-
-extension CharacterStatsData
-{
-  static let mario_stats = CharacterStats(weight: 98)
 }
