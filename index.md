@@ -36,6 +36,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
+---
 ### Privacy Policy
 
 ChiminhTT built the SSBUNotes app as an Open Source app. This SERVICE is provided by ChiminhTT at no cost and is intended for use as is.
